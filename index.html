@@ -224,25 +224,25 @@ const CFG={
  linkedin:"https://www.linkedin.com/in/carlo-james-palattao-86a2a1440/",                    // your LinkedIn URL
 };
 const PROJECTS=[
- {name:"Cindyrella Drip Aesthetic & Wellness Management System",cat:"Clinic & Spa Management System",types:["Management Systems","Business Systems","POS","Web Apps"],c:["#4338ca","#0ea5e9"],
+ {name:"Cindyrella Drip Aesthetic & Wellness Management System",cat:"Clinic & Spa Management System",types:["Management Systems","Business Systems","POS","Web Apps"],c:["#4338ca","#0ea5e9"],img:"assets/proj-cindyrella.png",
   desc:"A business management platform designed for clinic and spa operations, including POS, appointments, customers, services, inventory, staff management, branch management, reports, approvals, and role-based access control.",
   hl:"Branch-aware RBAC and business workflow automation",
   feat:["POS","Appointments","Customer management","Services & promos","Inventory","Packages & memberships","Cashier shifts","Reports & approvals","Expenses","Staff, roles & permissions","Branch management","Audit logs & notifications"],
   tech:["Next.js","TypeScript","Tailwind CSS","Supabase"],url:"https://cindyrelladrip-davao.vercel.app/",repo:""},
- {name:"HomeService PH",cat:"Service Marketplace Platform",types:["Web Apps"],c:["#0ea5e9","#6366f1"],
+ {name:"HomeService PH",cat:"Service Marketplace Platform",types:["Web Apps"],c:["#0ea5e9","#6366f1"],img:"assets/proj-homeservice.png",
   desc:"A marketplace platform connecting customers with service providers for home services.",
   feat:["Customer accounts","Provider accounts","Service listings","Booking system","Provider profiles","Reviews","Categories","Payments","Notifications","Admin dashboard","Role-based access"],
   tech:["Next.js","React","TypeScript","Tailwind CSS","Supabase","PostgreSQL"],url:"https://homeserviceph.vercel.app/",repo:""},
- {name:"Chloe House of Beauty Management System",cat:"Beauty & Spa Management System",types:["Management Systems","Business Systems","POS"],c:["#7c3aed","#ec4899"],
+ {name:"Chloe House of Beauty Management System",cat:"Beauty & Spa Management System",types:["Management Systems","Business Systems","POS"],c:["#7c3aed","#ec4899"],img:"assets/proj-chloe.png",
   desc:"A multi-module management platform designed for beauty and spa businesses.",
   feat:["Dashboard","Branch management","Staff","Customers","Services","Appointments","POS/Cashiering","Inventory","Reports","SMS","Staff commissions"],
   tech:["Web App","Multi-branch"],url:"",repo:""},
- {name:"STL Monitoring & Reporting System",cat:"Business Monitoring & Reporting",types:["Dashboards","Business Systems"],c:["#0f766e","#0ea5e9"],
+ {name:"STL Monitoring & Reporting System",cat:"Business Monitoring & Reporting",types:["Dashboards","Business Systems"],c:["#0f766e","#0ea5e9"],img:"assets/proj-stl.png",
   desc:"A real-time monitoring and reporting system designed to organize branch transactions, draw schedules, reports, and operational monitoring.",
   hl:"Real-time business visibility and operational monitoring",
   feat:["Real-time monitoring","Branch monitoring","Draw schedules","Transaction monitoring","Void monitoring","Staff/teller grouping","Reports","Audit logs","Automated reporting"],
   tech:["Next.js","Supabase","Automation"],url:"",repo:""},
- {name:"AAC Gross Update Dashboard",cat:"Business Intelligence Dashboard",types:["Dashboards","Business Systems"],c:["#1d4ed8","#22d3ee"],
+ {name:"AAC Gross Update Dashboard",cat:"Business Intelligence Dashboard",types:["Dashboards","Business Systems"],c:["#1d4ed8","#22d3ee"],img:"assets/proj-aac.png",
   desc:"A dashboard for monitoring branch gross sales, transactions, branch performance, and executive analytics.",
   feat:["Gross sales overview","Branch performance","Live transactions","Executive analytics","Reports","Data visualization","Google Sheets integration"],
   tech:["Dashboard","Google Sheets","Data viz"],url:"",repo:""}
@@ -261,7 +261,7 @@ document.querySelectorAll("[data-social]").forEach(b=>{b.innerHTML=links.length?
 $("#stats").innerHTML=ABOUT.map(a=>`<div class="card stat"><b>${a[0]}</b><span>${a[1]}</span></div>`).join("");
 const mock=(c,seed)=>{let b="";for(let i=0;i<7;i++){const h=30+((i*37+seed*23)%70);b+=`<rect x="${60+i*38}" y="${150-h}" width="24" height="${h}" rx="6" fill="#fff" opacity="${.35+i*.08}"/>`}return`<svg viewBox="0 0 360 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Project mockup"><defs><linearGradient id="g${seed}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${c[0]}"/><stop offset="1" stop-color="${c[1]}"/></linearGradient></defs><rect width="360" height="180" fill="url(#g${seed})"/><rect x="24" y="22" width="90" height="10" rx="5" fill="#fff" opacity=".8"/><rect x="24" y="40" width="50" height="6" rx="3" fill="#fff" opacity=".4"/>${b}<rect x="40" y="152" width="290" height="2" fill="#fff" opacity=".4"/></svg>`};
 const btn=(u,t,p)=>u?`<a class="btn sm ${p?"p":""}" href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`:"";
-$("#pg").innerHTML=PROJECTS.map((p,i)=>`<article class="card pc" data-t="${esc(p.types.join("|"))}"><div class="shot">${mock(p.c,i)}</div><div class="pb"><span class="cat">${esc(p.cat)}</span><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p>${p.hl?`<div class="hl">${esc(p.hl)}</div>`:""}<ul>${p.feat.map(f=>`<li>${esc(f)}</li>`).join("")}</ul><div class="tags">${p.tech.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div><div class="acts">${btn(p.url,"View Project",1)}${btn(p.repo,"GitHub")}${!p.url&&!p.repo?'<a class="btn sm" href="#contact">Ask about this project</a>':""}</div></div></article>`).join("");
+$("#pg").innerHTML=PROJECTS.map((p,i)=>`<article class="card pc" data-t="${esc(p.types.join("|"))}"><div class="shot">${p.img?`<img src="${esc(p.img)}" alt="${esc(p.name)}" style="width:100%;height:100%;object-fit:cover;display:block;">`:mock(p.c,i)}</div><div class="pb"><span class="cat">${esc(p.cat)}</span><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p>${p.hl?`<div class="hl">${esc(p.hl)}</div>`:""}<ul>${p.feat.map(f=>`<li>${esc(f)}</li>`).join("")}</ul><div class="tags">${p.tech.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div><div class="acts">${btn(p.url,"View Project",1)}${btn(p.repo,"GitHub")}${!p.url&&!p.repo?'<a class="btn sm" href="#contact">Ask about this project</a>':""}</div></div></article>`).join("");
 $("#filters").innerHTML=FILTERS.map((f,i)=>`<button aria-pressed="${i==0}" data-f="${f}">${f}</button>`).join("");
 $("#filters").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll("#filters button").forEach(x=>x.setAttribute("aria-pressed",x==b));document.querySelectorAll(".pc").forEach(c=>c.hidden=!(b.dataset.f=="All"||c.dataset.t.split("|").includes(b.dataset.f)))});
 $("#svc").innerHTML=SERVICES.map(s=>`<div class="card svc"><div class="ico" aria-hidden="true">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p></div>`).join("");
