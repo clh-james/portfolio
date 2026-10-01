@@ -130,9 +130,11 @@ input::placeholder,textarea::placeholder{color:#c9cffb}
 footer{border-top:1px solid var(--line);padding:40px 0 30px;color:var(--mute);font-size:.92rem}
 .fr{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}
 footer ul{display:flex;flex-wrap:wrap;gap:16px;list-style:none;padding:0}footer a{text-decoration:none}footer a:hover{color:var(--acc)}
-/* motion: one hero entrance, reveals only for cards */
+/* motion: hero entrance & scroll reveal */
 .hero .hg>*{animation:in .8s both}.hero .hg>*:nth-child(2){animation-delay:.15s}
 @keyframes in{from{opacity:0;transform:translateY(18px)}}
+.hid{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(0.16,1,0.3,1),transform .6s cubic-bezier(0.16,1,0.3,1)}
+.rev{opacity:1;transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -275,6 +277,9 @@ $("#nl").onclick=e=>{if(e.target.matches("a")){$("#nl").classList.remove("open")
 /* active nav link */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll("a.l").forEach(a=>a.classList.toggle("on",a.getAttribute("href")=="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
 document.querySelectorAll("main section[id]").forEach(s=>io.observe(s));
+/* scroll reveal animations */
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('rev');ro.unobserve(e.target)}}),{rootMargin:"0px 0px -15% 0px"});
+document.querySelectorAll(".card, .step, .h2, .lead, .photo, .ab > div").forEach(el=>{el.classList.add('hid');ro.observe(el)});
 /* contact: opens the visitor's email app (no backend needed). Swap for Formspree/Supabase later. */
 $("#cf").onsubmit=e=>{e.preventDefault();const f=e.target,fs=$("#fs");
  if(!f.name.value.trim()||!/\S+@\S+\.\S+/.test(f.email.value)||!f.message.value.trim()){fs.textContent="Please fill in your name, a valid email, and a message.";return}
