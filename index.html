@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carlo James L. Palattao | IT Professional &amp; Systems Developer</title>
+<meta name="description" content="I build modern business systems, POS platforms, dashboards, management applications, and responsive websites. Explore my projects and technology work.">
+<!-- TODO: replace https://YOUR-DOMAIN.com with your real deployed URL (Facebook needs absolute URLs) -->
+<link rel="canonical" href="https://carlojames-palattao.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Carlo James L. Palattao">
+<meta property="og:title" content="Carlo James L. Palattao | IT Professional & Systems Developer">
+<meta property="og:description" content="I build modern business systems, POS platforms, dashboards, management applications, and responsive websites. Explore my projects and technology work.">
+<meta property="og:url" content="https://carlojames-palattao.com/">
+<meta property="og:image" content="https://carlojames-palattao.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Carlo James L. Palattao - IT Professional, Web & App Developer, Systems Builder">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Carlo James L. Palattao | IT Professional & Systems Developer">
+<meta name="twitter:description" content="I build modern business systems, POS platforms, dashboards, management applications, and responsive websites.">
+<meta name="twitter:image" content="https://carlojames-palattao.com/og-image.png">
+<meta name="theme-color" content="#4338ca">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234338ca'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3ECP%3C/text%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+:root{--bg:#f6f7fb;--surface:#fff;--ink:#12163a;--mute:#5a6085;--line:#e3e6f2;--acc:#4338ca;--acc2:#0ea5e9;--glow:rgba(67,56,202,.18);--sh:0 10px 30px -12px rgba(30,30,90,.22);color-scheme:light}
+:root:not([data-theme=light]){}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b0e24;--surface:#131736;--ink:#eef0ff;--mute:#9aa0c8;--line:#232850;--acc:#818cf8;--acc2:#38bdf8;--glow:rgba(129,140,248,.22);--sh:0 10px 30px -12px rgba(0,0,0,.6);color-scheme:dark}}
+:root[data-theme=dark]{--bg:#0b0e24;--surface:#131736;--ink:#eef0ff;--mute:#9aa0c8;--line:#232850;--acc:#818cf8;--acc2:#38bdf8;--glow:rgba(129,140,248,.22);--sh:0 10px 30px -12px rgba(0,0,0,.6);color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3{font-family:"Space Grotesk","Plus Jakarta Sans",system-ui,sans-serif;line-height:1.12;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc2);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+section{padding:84px 0}
+.h2{font-size:clamp(1.8rem,4.5vw,2.6rem);margin-bottom:12px}
+.lead{color:var(--mute);max-width:60ch;margin-bottom:38px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:var(--surface);cursor:pointer;font:inherit;font-weight:600;color:var(--ink);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--sh)}
+.btn.p{background:linear-gradient(135deg,var(--acc),#6366f1);color:#fff;border:0}
+.btn.sm{padding:8px 14px;font-size:.88rem;border-radius:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--sh)}
+/* nav */
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:"Space Grotesk",sans-serif;font-weight:700;text-decoration:none;font-size:1.1rem}
+.logo b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--acc);color:#fff;margin-right:8px;font-size:.9rem}
+nav ul{display:flex;gap:6px;list-style:none;padding:0}
+nav a.l{padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--mute);font-weight:500;font-size:.95rem}
+nav a.l:hover,nav a.l.on{color:var(--ink);background:var(--surface)}
+.tools{display:flex;gap:8px}
+.ib{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:1.05rem}
+#menu{display:none}
+@media(max-width:860px){#menu{display:block}nav ul{position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--bg);padding:12px 20px 20px;border-bottom:1px solid var(--line);display:none}nav ul.open{display:flex}}
+/* hero */
+.hero{padding:70px 0 40px}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+@media(max-width:860px){.hg{grid-template-columns:1fr}}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:99px;background:var(--surface);border:1px solid var(--line);font-size:.85rem;font-weight:600;margin-bottom:22px}
+.badge i{width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+h1{font-size:clamp(2.3rem,6.4vw,4rem);margin-bottom:20px}
+.hero p.lead{font-size:1.08rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.soc{display:flex;gap:10px;flex-wrap:wrap}
+.soc a{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:99px;border:1px solid var(--line);background:var(--surface);text-decoration:none;font-size:.88rem;font-weight:500;transition:.2s}
+.soc a:hover{border-color:var(--acc);color:var(--acc)}
+.photo{position:relative;aspect-ratio:1;max-width:400px;margin-inline:auto;width:100%;border-radius:32px;background:linear-gradient(145deg,var(--acc),var(--acc2));padding:3px;box-shadow:0 30px 60px -20px var(--glow)}
+.photo div{height:100%;border-radius:29px;background:var(--surface);display:grid;place-items:center;text-align:center;color:var(--mute);font-size:.9rem;padding:20px}
+.photo .ini{font-family:"Space Grotesk",sans-serif;font-size:4.5rem;font-weight:700;color:var(--acc);display:block;line-height:1}
+.chip{position:absolute;padding:8px 14px;border-radius:14px;font-size:.8rem;font-weight:600;background:color-mix(in srgb,var(--surface) 80%,transparent);backdrop-filter:blur(10px);border:1px solid var(--line);box-shadow:var(--sh)}
+.chip.a{left:-14px;bottom:18%}.chip.b{right:-10px;top:12%}
+/* about */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:28px}
+.stat{padding:20px}.stat b{display:block;font-family:"Space Grotesk",sans-serif;font-size:1.05rem;margin-bottom:4px}.stat span{font-size:.88rem;color:var(--mute)}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:860px){.ab{grid-template-columns:1fr}}
+.ab p{color:var(--mute);margin-bottom:14px}
+/* skills */
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.sk .card{padding:24px}.sk h3{font-size:1.1rem;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{padding:5px 12px;border-radius:99px;background:color-mix(in srgb,var(--acc) 10%,transparent);color:var(--acc);font-size:.82rem;font-weight:600}
+/* projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filters button{padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font:inherit;font-size:.9rem;font-weight:600}
+.filters button[aria-pressed=true]{background:var(--acc);color:#fff;border-color:var(--acc)}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:24px}
+.pc{overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.pc:hover,.pc:focus-within{transform:translateY(-6px);box-shadow:0 26px 50px -18px var(--glow)}
+.pc[hidden]{display:none}
+.shot{height:180px;overflow:hidden;position:relative}
+.shot svg{width:100%;height:100%;transition:transform .5s}
+.pc:hover .shot svg{transform:scale(1.06)}
+.pb{padding:22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.cat{font-size:.82rem;color:var(--acc);font-weight:700}
+.pb h3{font-size:1.25rem}.pb p{color:var(--mute);font-size:.94rem}
+.hl{font-size:.88rem;font-weight:600;padding:10px 12px;border-radius:12px;background:color-mix(in srgb,var(--acc2) 12%,transparent)}
+.pb ul{padding-left:18px;color:var(--mute);font-size:.88rem;columns:2;gap:14px}
+.pc .tag{transition:transform .25s}.pc:hover .tag{transform:translateY(-2px)}
+.acts{display:flex;gap:8px;margin-top:auto;padding-top:6px;transition:opacity .25s,transform .25s}
+@media(hover:hover){.acts{opacity:0;transform:translateY(6px)}.pc:hover .acts,.pc:focus-within .acts{opacity:1;transform:none}}
+/* services etc */
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.svc{padding:26px;transition:transform .25s}.svc:hover{transform:translateY(-4px)}
+.svc h3{font-size:1.1rem;margin:10px 0 6px}.svc p{color:var(--mute);font-size:.94rem}
+.ico{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;font-size:1.2rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;counter-reset:s}
+.step{padding:8px 26px 8px 0;position:relative}
+.step b{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--acc);color:#fff;font-family:"Space Grotesk",sans-serif;margin-bottom:12px}
+.step h3{font-size:1.1rem}.step p{color:var(--mute);font-size:.94rem}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.why div{padding:16px 18px;display:flex;gap:10px;align-items:center;font-weight:600;font-size:.95rem}.why div:before{content:"✓";color:#fff;background:var(--acc);width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:.75rem;flex:none}
+.cloud{display:flex;flex-wrap:wrap;gap:12px}
+.cloud span{padding:14px 22px;border-radius:16px;background:var(--surface);border:1px solid var(--line);font-weight:700;font-family:"Space Grotesk",sans-serif;transition:.25s}
+.cloud span:hover{transform:translateY(-3px) rotate(-1deg);border-color:var(--acc);color:var(--acc)}
+/* contact */
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:48px;border-radius:28px;background:linear-gradient(135deg,#312e81,#4338ca 55%,#0284c7);color:#fff;box-shadow:0 30px 60px -24px rgba(67,56,202,.6)}
+@media(max-width:860px){.ct{grid-template-columns:1fr;padding:28px}}
+.ct .lead{color:#dfe3ff}
+.ct .soc a{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25);color:#fff}
+form{display:grid;gap:12px}
+label{font-size:.85rem;font-weight:600}
+input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.12);color:#fff;font:inherit}
+input::placeholder,textarea::placeholder{color:#c9cffb}
+.ct .btn.p{background:#fff;color:#312e81}
+#fs{font-size:.88rem;min-height:1.3em}
+footer{border-top:1px solid var(--line);padding:40px 0 30px;color:var(--mute);font-size:.92rem}
+.fr{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}
+footer ul{display:flex;flex-wrap:wrap;gap:16px;list-style:none;padding:0}footer a{text-decoration:none}footer a:hover{color:var(--acc)}
+/* motion: one hero entrance, reveals only for cards */
+.hero .hg>*{animation:in .8s both}.hero .hg>*:nth-child(2){animation-delay:.15s}
+@keyframes in{from{opacity:0;transform:translateY(18px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a href="#main" style="position:absolute;left:-999px" onfocus="this.style.left='12px'" onblur="this.style.left='-999px'">Skip to content</a>
+<header><div class="wrap nav">
+<a class="logo" href="#home" aria-label="Home"><b>CP</b>Carlo James</a>
+<nav aria-label="Main"><ul id="nl">
+<li><a class="l" href="#about">About</a></li><li><a class="l" href="#projects">Projects</a></li><li><a class="l" href="#services">Services</a></li><li><a class="l" href="#skills">Skills</a></li><li><a class="l" href="#contact">Contact</a></li></ul></nav>
+<div class="tools"><button class="ib" id="th" aria-label="Toggle dark or light mode">◐</button><button class="ib" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="nl">☰</button></div>
+</div></header>
+
+<main id="main">
+<section class="hero" id="home"><div class="wrap hg">
+<div>
+<span class="badge"><i></i>Available for Projects</span>
+<h1>I Build Digital Systems That Help Businesses Work Smarter.</h1>
+<p class="lead">IT professional and systems builder specializing in modern web applications, business management systems, POS solutions, dashboards, automation, and responsive websites.</p>
+<div class="cta"><a class="btn p" href="#projects">View My Projects</a><a class="btn" href="#contact">Contact Me</a></div>
+<div class="soc" data-social></div>
+</div>
+<div class="photo" role="img" aria-label="Profile photo">
+<img src="assets/profile.png" alt="Carlo James L. Palattao" style="width:100%;height:100%;object-fit:cover;border-radius:29px;display:block;">
+<span class="chip a">POS &amp; Management Systems</span><span class="chip b">Dashboards &amp; Automation</span></div>
+</div></section>
+
+<section id="about"><div class="wrap ab">
+<div><h2 class="h2">Technology, business processes, and practical problem solving.</h2></div>
+<div><p>I am an IT professional and developer focused on building practical digital solutions for businesses. My work includes web applications, POS systems, clinic and spa management systems, dashboards, reporting tools, automation, and responsive business websites.</p><p>I enjoy turning real-world business requirements into reliable, easy-to-use software.</p></div>
+<div class="stats" style="grid-column:1/-1" id="stats"></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2 class="h2">Featured projects</h2><p class="lead">Systems built around real business workflows. Filter by type.</p>
+<div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+<div class="pg" id="pg" aria-live="polite"></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2 class="h2">What I can build</h2><p class="lead">From a single website to a multi-branch business system.</p>
+<div class="g3" id="svc"></div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<h2 class="h2">How I work</h2><p class="lead">A simple four-step process.</p>
+<div class="steps" id="steps"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2 class="h2">Skills</h2><p class="lead">The tools and areas I work in.</p>
+<div class="sk" id="sk"></div>
+</div></section>
+
+<section><div class="wrap">
+<h2 class="h2">Why work with me</h2><p class="lead">What you can expect on a project.</p>
+<div class="why" id="why"></div>
+</div></section>
+
+<section><div class="wrap">
+<h2 class="h2">Technology stack</h2><p class="lead">What my systems are built with.</p>
+<div class="cloud" id="cloud"></div>
+</div></section>
+
+<section id="contact"><div class="wrap ct">
+<div><h2 class="h2">Have a project in mind?</h2><p class="lead">Let's turn your idea or business process into a practical digital solution.</p><div class="soc" data-social></div></div>
+<form id="cf" novalidate>
+<div><label for="n">Name</label><input id="n" name="name" autocomplete="name" required></div>
+<div><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required></div>
+<div><label for="m">Message</label><textarea id="m" name="message" rows="5" required></textarea></div>
+<button class="btn p" type="submit">Send Message</button><p id="fs" role="status"></p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap fr">
+<div><strong style="color:var(--ink)">Carlo James L. Palattao</strong><br>IT Professional • Web Developer • Systems Builder<br><small>Sultan Kudarat, Philippines</small></div>
+<ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul>
+<div style="width:100%">© 2026 Carlo James L. Palattao. All rights reserved.</div>
+</div></footer>
+
+<script>
+/* ===== EDIT THIS BLOCK: your links and content. Empty string = link is hidden. ===== */
+const CFG={
+ email:"palattaocarlojames@gmail.com",                       // e.g. "you@example.com"
+ facebook:"https://www.facebook.com/profile.php?id=61580794156394",                    // your Facebook profile URL
+ github:"https://github.com/clh-james",                      // your GitHub profile URL
+ linkedin:"https://www.linkedin.com/in/carlo-james-palattao-86a2a1440/",                    // your LinkedIn URL
+};
+const PROJECTS=[
+ {name:"Cindyrella Drip Aesthetic & Wellness Management System",cat:"Clinic & Spa Management System",types:["Management Systems","Business Systems","POS","Web Apps"],c:["#4338ca","#0ea5e9"],
+  desc:"A business management platform designed for clinic and spa operations, including POS, appointments, customers, services, inventory, staff management, branch management, reports, approvals, and role-based access control.",
+  hl:"Branch-aware RBAC and business workflow automation",
+  feat:["POS","Appointments","Customer management","Services & promos","Inventory","Packages & memberships","Cashier shifts","Reports & approvals","Expenses","Staff, roles & permissions","Branch management","Audit logs & notifications"],
+  tech:["Next.js","TypeScript","Tailwind CSS","Supabase"],url:"https://cindyrelladrip-davao.vercel.app/",repo:""},
+ {name:"HomeService PH",cat:"Service Marketplace Platform",types:["Web Apps"],c:["#0ea5e9","#6366f1"],
+  desc:"A marketplace platform connecting customers with service providers for home services.",
+  feat:["Customer accounts","Provider accounts","Service listings","Booking system","Provider profiles","Reviews","Categories","Payments","Notifications","Admin dashboard","Role-based access"],
+  tech:["Next.js","React","TypeScript","Tailwind CSS","Supabase","PostgreSQL"],url:"https://homeserviceph.vercel.app/",repo:""},
+ {name:"Chloe House of Beauty Management System",cat:"Beauty & Spa Management System",types:["Management Systems","Business Systems","POS"],c:["#7c3aed","#ec4899"],
+  desc:"A multi-module management platform designed for beauty and spa businesses.",
+  feat:["Dashboard","Branch management","Staff","Customers","Services","Appointments","POS/Cashiering","Inventory","Reports","SMS","Staff commissions"],
+  tech:["Web App","Multi-branch"],url:"",repo:""},
+ {name:"STL Monitoring & Reporting System",cat:"Business Monitoring & Reporting",types:["Dashboards","Business Systems"],c:["#0f766e","#0ea5e9"],
+  desc:"A real-time monitoring and reporting system designed to organize branch transactions, draw schedules, reports, and operational monitoring.",
+  hl:"Real-time business visibility and operational monitoring",
+  feat:["Real-time monitoring","Branch monitoring","Draw schedules","Transaction monitoring","Void monitoring","Staff/teller grouping","Reports","Audit logs","Automated reporting"],
+  tech:["Next.js","Supabase","Automation"],url:"",repo:""},
+ {name:"AAC Gross Update Dashboard",cat:"Business Intelligence Dashboard",types:["Dashboards","Business Systems"],c:["#1d4ed8","#22d3ee"],
+  desc:"A dashboard for monitoring branch gross sales, transactions, branch performance, and executive analytics.",
+  feat:["Gross sales overview","Branch performance","Live transactions","Executive analytics","Reports","Data visualization","Google Sheets integration"],
+  tech:["Dashboard","Google Sheets","Data viz"],url:"",repo:""}
+];
+const FILTERS=["All","Web Apps","Business Systems","POS","Dashboards","Management Systems"];
+const ABOUT=[["IT Professional","Technology with business sense"],["Web & App Development","Modern, responsive builds"],["Business Systems","Built around real workflows"],["POS & Management Systems","Sales, inventory, reports"],["Automation & Dashboards","Less manual work, more visibility"]];
+const SERVICES=[["🏢","Business Management Systems","Custom systems designed around actual business workflows."],["🧾","POS Systems","Sales, cashiering, inventory, receipts, transactions, and reports."],["🌐","Web Applications","Modern responsive web applications for businesses and organizations."],["📊","Dashboards","Real-time dashboards and analytics systems."],["🏬","Multi-Branch Systems","Branch-aware users, permissions, inventory, sales, and reports."],["⚙️","Automation","Automated workflows, reporting, notifications, and business processes."],["💻","Business Websites","Professional responsive websites designed to establish an online presence."]];
+const STEPS=[["Understand","Understand the business and requirements."],["Design","Plan the user experience and system architecture."],["Build","Develop and integrate the system."],["Improve","Test, deploy, monitor, and continuously improve."]];
+const SKILLS={"Frontend":["React","Next.js","TypeScript","JavaScript","HTML","CSS","Tailwind CSS","shadcn/ui"],"Backend & Database":["Supabase","PostgreSQL","API Integration","Authentication","Server Actions"],"Tools":["Git","GitHub","VS Code","Vercel","Netlify","AI-assisted development"],"Business Systems":["POS","Inventory Management","Appointment Management","Customer Management","Reporting","RBAC","Multi-branch Systems","Dashboard Development","Workflow Automation"]};
+const WHY=["Practical business-focused development","Clean and responsive interfaces","Real-world workflow understanding","Modern technology","Role-based security","Scalable architecture","Continuous improvement","AI-assisted development"];
+const STACK=["Next.js","React","TypeScript","JavaScript","Tailwind CSS","shadcn/ui","Supabase","PostgreSQL","GitHub","Vercel","Netlify","Google Maps","REST APIs","AI Tools"];
+/* ===== end config ===== */
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const links=[["Facebook",CFG.facebook],["GitHub",CFG.github],["LinkedIn",CFG.linkedin],["Email",CFG.email&&"mailto:"+CFG.email]].filter(l=>l[1]);
+document.querySelectorAll("[data-social]").forEach(b=>{b.innerHTML=links.length?links.map(l=>`<a href="${esc(l[1])}" target="_blank" rel="noopener">${l[0]}</a>`).join(""):'<a href="#contact">Contact form</a>'});
+$("#stats").innerHTML=ABOUT.map(a=>`<div class="card stat"><b>${a[0]}</b><span>${a[1]}</span></div>`).join("");
+const mock=(c,seed)=>{let b="";for(let i=0;i<7;i++){const h=30+((i*37+seed*23)%70);b+=`<rect x="${60+i*38}" y="${150-h}" width="24" height="${h}" rx="6" fill="#fff" opacity="${.35+i*.08}"/>`}return`<svg viewBox="0 0 360 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Project mockup"><defs><linearGradient id="g${seed}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${c[0]}"/><stop offset="1" stop-color="${c[1]}"/></linearGradient></defs><rect width="360" height="180" fill="url(#g${seed})"/><rect x="24" y="22" width="90" height="10" rx="5" fill="#fff" opacity=".8"/><rect x="24" y="40" width="50" height="6" rx="3" fill="#fff" opacity=".4"/>${b}<rect x="40" y="152" width="290" height="2" fill="#fff" opacity=".4"/></svg>`};
+const btn=(u,t,p)=>u?`<a class="btn sm ${p?"p":""}" href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`:"";
+$("#pg").innerHTML=PROJECTS.map((p,i)=>`<article class="card pc" data-t="${esc(p.types.join("|"))}"><div class="shot">${mock(p.c,i)}</div><div class="pb"><span class="cat">${esc(p.cat)}</span><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p>${p.hl?`<div class="hl">${esc(p.hl)}</div>`:""}<ul>${p.feat.map(f=>`<li>${esc(f)}</li>`).join("")}</ul><div class="tags">${p.tech.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div><div class="acts">${btn(p.url,"View Project",1)}${btn(p.repo,"GitHub")}${!p.url&&!p.repo?'<a class="btn sm" href="#contact">Ask about this project</a>':""}</div></div></article>`).join("");
+$("#filters").innerHTML=FILTERS.map((f,i)=>`<button aria-pressed="${i==0}" data-f="${f}">${f}</button>`).join("");
+$("#filters").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll("#filters button").forEach(x=>x.setAttribute("aria-pressed",x==b));document.querySelectorAll(".pc").forEach(c=>c.hidden=!(b.dataset.f=="All"||c.dataset.t.split("|").includes(b.dataset.f)))});
+$("#svc").innerHTML=SERVICES.map(s=>`<div class="card svc"><div class="ico" aria-hidden="true">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p></div>`).join("");
+$("#steps").innerHTML=STEPS.map((s,i)=>`<div class="step"><b>${i+1}</b><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("");
+$("#sk").innerHTML=Object.entries(SKILLS).map(([k,v])=>`<div class="card"><h3>${k}</h3><div class="tags">${v.map(t=>`<span class="tag">${t}</span>`).join("")}</div></div>`).join("");
+$("#why").innerHTML=WHY.map(w=>`<div class="card">${w}</div>`).join("");
+$("#cloud").innerHTML=STACK.map(s=>`<span>${s}</span>`).join("");
+/* theme + menu */
+const root=document.documentElement;
+$("#th").onclick=()=>{const dark=root.dataset.theme?root.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;const n=dark?"light":"dark";root.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}};
+$("#menu").onclick=function(){const o=$("#nl").classList.toggle("open");this.setAttribute("aria-expanded",o)};
+$("#nl").onclick=e=>{if(e.target.matches("a")){$("#nl").classList.remove("open");$("#menu").setAttribute("aria-expanded","false")}};
+/* active nav link */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll("a.l").forEach(a=>a.classList.toggle("on",a.getAttribute("href")=="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section[id]").forEach(s=>io.observe(s));
+/* contact: opens the visitor's email app (no backend needed). Swap for Formspree/Supabase later. */
+$("#cf").onsubmit=e=>{e.preventDefault();const f=e.target,fs=$("#fs");
+ if(!f.name.value.trim()||!/\S+@\S+\.\S+/.test(f.email.value)||!f.message.value.trim()){fs.textContent="Please fill in your name, a valid email, and a message.";return}
+ if(!CFG.email){fs.textContent="Contact email isn't set up yet. Please reach out through the social links.";return}
+ location.href="mailto:"+CFG.email+"?subject="+encodeURIComponent("Project inquiry from "+f.name.value)+"&body="+encodeURIComponent(f.message.value+"\n\n"+f.name.value+" ("+f.email.value+")");
+ fs.textContent="Opening your email app…"};
+</script>
+</body>
+</html>
