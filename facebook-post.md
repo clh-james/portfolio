@@ -15,7 +15,7 @@ Here are some of the projects I’ve worked on and the technologies I use to tur
 
 Check out my portfolio and explore my work.
 
-https://carlojames-palattao.com
+https://carlojames-bong-palattao.com
 
 #ITProfessional #WebDeveloper #SoftwareDevelopment #Portfolio #WebDevelopment #BusinessSystems #POS #Technology
 
